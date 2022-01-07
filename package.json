@@ -1,0 +1,38 @@
+{
+    "name": "@kidwen/eslint-config-angular",
+    "version": "0.0.1",
+    "description": "eslint for angular project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kidwen/eslint-config-angular.git"
+    },
+    "keywords": [
+        "eslint",
+        "angular"
+    ],
+    "author": "kidwen",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kidwen/eslint-config-angular/issues"
+    },
+    "homepage": "https://github.com/kidwen/eslint-config-angular#readme",
+    "peerDependencies": {
+        "@angular-eslint/builder": "^13.0.1",
+        "@angular-eslint/eslint-plugin": "^13.0.1",
+        "@angular-eslint/eslint-plugin-template": "^13.0.1",
+        "@angular-eslint/schematics": "^13.0.1",
+        "@angular-eslint/template-parser": "^13.0.1",
+        "@typescript-eslint/eslint-plugin": "^5.8.1",
+        "@typescript-eslint/parser": "^5.8.1",
+        "codelyzer": "^6.0.2",
+        "eslint": "^8.6.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-jsdoc": "^37.5.0",
+        "eslint-plugin-prefer-arrow": "^1.2.3",
+        "eslint-plugin-unicorn": "^40.0.0"
+    }
+}
