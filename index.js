@@ -4,10 +4,10 @@ module.exports = {
             "modules": true
         },
         "project": [
-            "tsconfig.app.json"
+            "tsconfig.eslint.json"
         ],
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module",
     },
     "parser": "@typescript-eslint/parser",
     "extends": [
@@ -19,6 +19,7 @@ module.exports = {
         "jsdoc",
         "unicorn",
         "prefer-arrow",
+
     ],
     "rules": {
         "@typescript-eslint/array-type": [
@@ -181,54 +182,65 @@ module.exports = {
             "files": [
                 "*.component.ts"
             ],
-            // "parserOptions": {
-            //     "project": [
-            //         "./tsconfig.json"
-            //     ],
-            //     "createDefaultProgram": true
-            // },
-            "parser": "@typescript-eslint/parser",
             "plugins": [
-                "@typescript-eslint",
-                // "@angular-eslint"
+                "@angular-eslint/eslint-plugin-template",
+                "@angular-eslint",
             ],
             "rules": {
-                // "@angular-eslint/component-class-suffix": [
-                //     "error",
-                //     {
-                //         "suffixes": [
-                //             "Component"
-                //         ]
-                //     }
-                // ],
+                "@angular-eslint/no-empty-lifecycle-method": "error",
+                "@angular-eslint/sort-ngmodule-metadata-arrays": "error",
+                "@angular-eslint/component-class-suffix": [
+                    "error",
+                    {
+                        "suffixes": [
+                            "Component"
+                        ]
+                    }
+                ],
+                "@angular-eslint/directive-class-suffix": [
+                    "error",
+                    {
+                        "suffixes": [
+                            "Directive"
+                        ]
+                    }
+                ],
+                "@angular-eslint/component-selector": [
+                    "error",
+                    {
+                        "type": "element",
+                        "prefix": "",
+                        "style": "kebab-case"
+                    }
+                ],
+                "@angular-eslint/use-injectable-provided-in": "error",
+                "@angular-eslint/contextual-decorator": "error",
+                "@angular-eslint/component-selector": [
+                    "error",
+                    {
+                        "type": "element",
+                        "prefix": "",
+                        "style": "kebab-case"
+                    }
+                ],
+                "@angular-eslint/use-injectable-provided-in": "error",
+                "@angular-eslint/contextual-decorator": "error",
+
+                "@angular-eslint/directive-selector": [
+                    "error",
+                    {
+                        "type": "attribute",
+                        "prefix": "",
+                        "style": "camelCase"
+                    }
+                ],
+                "@angular-eslint/no-attribute-decorator": "error",
+                "@angular-eslint/no-output-on-prefix": "error",
+                "@angular-eslint/no-pipe-impure": "error",
+                "@angular-eslint/no-queries-metadata-property": "error",
+                "@angular-eslint/no-lifecycle-call": "off",
                 "@angular-eslint/component-max-inline-declarations": "off",
-                // "@angular-eslint/component-selector": [
-                //     "error",
-                //     {
-                //         "type": "element",
-                //         "prefix": "",
-                //         "style": "kebab-case"
-                //     }
-                // ],
-                // "@angular-eslint/use-injectable-provided-in": "error",
-                // "@angular-eslint/contextual-decorator": "error",
-                // "@angular-eslint/directive-class-suffix": [
-                //     "error",
-                //     {
-                //         "suffixes": [
-                //             "Directive"
-                //         ]
-                //     }
-                // ],
-                // "@angular-eslint/directive-selector": [
-                //     "error",
-                //     {
-                //         "type": "attribute",
-                //         "prefix": "",
-                //         "style": "camelCase"
-                //     }
-                // ],
-                // "@angular-eslint/no-attribute-decorator": "error",
+
                 "@angular-eslint/no-forward-ref": "off",
                 "@angular-eslint/no-input-prefix": [
                     "off",
@@ -241,41 +253,44 @@ module.exports = {
                         ]
                     }
                 ],
-                "@angular-eslint/no-lifecycle-call": "off",
-                // "@angular-eslint/no-output-on-prefix": "error",
-                // "@angular-eslint/no-pipe-impure": "error",
-                // "@angular-eslint/no-queries-metadata-property": "error",
+
                 "@angular-eslint/pipe-prefix": "off",
-                // "@angular-eslint/no-output-native": "error",
-                // "@angular-eslint/prefer-output-readonly": "error",
-                // "@angular-eslint/relative-url-prefix": "error",
-                // "@angular-eslint/use-component-selector": "error",
-                // "@angular-eslint/use-component-view-encapsulation": "error",
-                // "@angular-eslint/contextual-lifecycle": [
-                //     "error"
-                // ],
-                // "@angular-eslint/prefer-on-push-component-change-detection": "error",
-                // "@typescript-eslint/await-thenable": "error",
-                // "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
-                // "@typescript-eslint/no-unnecessary-qualifier": "error",
-                // "@typescript-eslint/no-unnecessary-type-arguments": "error",
-                // "@typescript-eslint/promise-function-async": "error",
+                "@angular-eslint/no-output-native": "error",
+                "@angular-eslint/prefer-output-readonly": "error",
+                "@angular-eslint/relative-url-prefix": "error",
+                "@angular-eslint/use-component-selector": "error",
+                "@angular-eslint/use-component-view-encapsulation": "error",
+                "@angular-eslint/contextual-lifecycle": [
+                    "error"
+                ],
+                "@angular-eslint/prefer-on-push-component-change-detection": "error",
+                "@typescript-eslint/await-thenable": "error",
+                "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
+                "@typescript-eslint/no-unnecessary-qualifier": "error",
+                "@typescript-eslint/no-unnecessary-type-arguments": "error",
+                "@typescript-eslint/promise-function-async": "error",
+            }
+        },
+        {
+            "files": [
+                "*.ts"
+            ],
+            "parser": "@typescript-eslint/parser",
+            "plugins": [
+                "@typescript-eslint",
+            ],
+            "rules": {
                 "@typescript-eslint/restrict-plus-operands": "error",
                 "@typescript-eslint/unbound-method": "error",
                 "import/no-deprecated": "error",
-                // "no-useless-constructor": "error",
+                "no-useless-constructor": "error",
+                "@typescript-eslint/no-unused-vars": "error"
             }
         },
         {
             "files": [
                 "*.html"
             ],
-            // "extends": [
-            //     "plugin:@angular-eslint/template/recommended"
-            // ],
-            // "plugins": [
-            //     "@angular-eslint"
-            // ],
             "parser": "@angular-eslint/template-parser",
             "rules": {
                 "@angular-eslint/template/accessibility-alt-text": "off",
@@ -291,15 +306,13 @@ module.exports = {
                 //     }
                 // ],
                 "@angular-eslint/template/cyclomatic-complexity": "off",
-                // "@angular-eslint/template/mouse-events-have-key-events": "error",
-                // "@angular-eslint/template/no-any": "error",
-                // "@angular-eslint/template/no-autofocus": "error",
+                "@angular-eslint/template/mouse-events-have-key-events": "error",
+                "@angular-eslint/template/no-any": "error",
+                "@angular-eslint/template/no-autofocus": "error",
                 // "@angular-eslint/template/no-call-expression": "error",
-                // "@angular-eslint/template/no-distracting-elements": "error",
+                "@angular-eslint/template/no-distracting-elements": "error",
                 "@angular-eslint/template/no-positive-tabindex": "off",
                 "@angular-eslint/template/use-track-by-function": "off",
-                // "@angular-eslint/sort-ngmodule-metadata-arrays": "error",
-                // "@angular-eslint/no-empty-lifecycle-method": "error",
                 "@angular-eslint/template/i18n": "off",
                 // "@angular-eslint/template/i18n": [
                 //     "error",

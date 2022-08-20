@@ -20,14 +20,14 @@
         "url": "https://github.com/kidwen/eslint-config-angular/issues"
     },
     "homepage": "https://github.com/kidwen/eslint-config-angular#readme",
-    "peerDependencies": {
+    "dependencies": {
         "@angular-eslint/builder": "^13.0.1",
         "@angular-eslint/eslint-plugin": "^13.0.1",
         "@angular-eslint/eslint-plugin-template": "^13.0.1",
         "@angular-eslint/schematics": "^13.0.1",
         "@angular-eslint/template-parser": "^13.0.1",
-        "@typescript-eslint/eslint-plugin": "^5.8.1",
-        "@typescript-eslint/parser": "^5.8.1",
+        "@typescript-eslint/eslint-plugin": "4.33.0",
+        "@typescript-eslint/parser": "4.33.0",
         "codelyzer": "^6.0.2",
         "eslint": "^8.6.0",
         "eslint-plugin-import": "^2.25.3",
