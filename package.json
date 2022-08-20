@@ -1,14 +1,11 @@
 {
-    "name": "@kidwen/eslint-config-angular",
+    "name": "@kidwen/eslint-angular",
     "version": "0.0.1",
     "description": "eslint for angular project",
     "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/kidwen/eslint-config-angular.git"
+        "url": "git+https://github.com/kidwen/eslint-angular.git"
     },
     "keywords": [
         "eslint",
@@ -17,9 +14,9 @@
     "author": "kidwen",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/kidwen/eslint-config-angular/issues"
+        "url": "https://github.com/kidwen/eslint-angular/issues"
     },
-    "homepage": "https://github.com/kidwen/eslint-config-angular#readme",
+    "homepage": "https://github.com/kidwen/eslint-angular#readme",
     "dependencies": {
         "@angular-eslint/builder": "^14.0.2",
         "@angular-eslint/eslint-plugin": "^14.0.2",

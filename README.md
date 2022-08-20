@@ -1,4 +1,4 @@
-# eslint-config-angular
+# eslint-angular
 > eslint for angular project
 
 ## Quick Start
@@ -7,9 +7,9 @@
 1. install this package in your project
     ```sh
     # use npm
-    npm install @kidwen/eslint-config-angular@latest --save-dev
+    npm install @kidwen/eslint-angular@latest --save-dev
     # use yarn
-    yarn add @kidwen/eslint-config-angular@latest --dev 
+    yarn add @kidwen/eslint-angular@latest --dev 
     ```
 
 1. add `tsconfig.eslint.json` file like this
@@ -28,6 +28,6 @@
     ```
     {
         "root": true,
-        "extends": "@kidwen/eslint-config-angular"
+        "extends": "@kidwen/eslint-angular"
     }
     ```
