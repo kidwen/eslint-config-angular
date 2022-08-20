@@ -21,18 +21,18 @@
     },
     "homepage": "https://github.com/kidwen/eslint-config-angular#readme",
     "dependencies": {
-        "@angular-eslint/builder": "^13.0.1",
-        "@angular-eslint/eslint-plugin": "^13.0.1",
-        "@angular-eslint/eslint-plugin-template": "^13.0.1",
-        "@angular-eslint/schematics": "^13.0.1",
-        "@angular-eslint/template-parser": "^13.0.1",
-        "@typescript-eslint/eslint-plugin": "4.33.0",
-        "@typescript-eslint/parser": "4.33.0",
+        "@angular-eslint/builder": "^14.0.2",
+        "@angular-eslint/eslint-plugin": "^14.0.2",
+        "@angular-eslint/eslint-plugin-template": "^14.0.2",
+        "@angular-eslint/schematics": "^14.0.2",
+        "@angular-eslint/template-parser": "^14.0.2",
+        "@typescript-eslint/eslint-plugin": "^5.33.1",
+        "@typescript-eslint/parser": "^5.33.1",
         "codelyzer": "^6.0.2",
-        "eslint": "^8.6.0",
-        "eslint-plugin-import": "^2.25.3",
-        "eslint-plugin-jsdoc": "^37.5.0",
+        "eslint": "^8.22.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsdoc": "^39.3.6",
         "eslint-plugin-prefer-arrow": "^1.2.3",
-        "eslint-plugin-unicorn": "^40.0.0"
+        "eslint-plugin-unicorn": "^43.0.2"
     }
 }
