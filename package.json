@@ -7,6 +7,9 @@
         "type": "git",
         "url": "git+https://github.com/kidwen/eslint-angular.git"
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "keywords": [
         "eslint",
         "angular"
