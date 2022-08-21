@@ -1,5 +1,5 @@
 {
-    "name": "@kidwen/eslint-angular",
+    "name": "@kidwen/eslint-config-angular",
     "version": "0.0.1",
     "description": "eslint for angular project",
     "main": "index.js",
