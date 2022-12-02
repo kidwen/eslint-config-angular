@@ -316,6 +316,7 @@ module.exports = {
                 "@angular-eslint/template/no-positive-tabindex": "off",
                 "@angular-eslint/template/use-track-by-function": "off",
                 "@angular-eslint/template/i18n": "off",
+                "@angular-eslint/template/attributes-order": "error"
                 // "@angular-eslint/template/i18n": [
                 //     "error",
                 //     {
