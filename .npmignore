@@ -1,2 +1,4 @@
 .editorconfig
 *.log
+example
+*.lock

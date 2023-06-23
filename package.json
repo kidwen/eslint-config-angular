@@ -1,6 +1,6 @@
 {
     "name": "@kidwen/eslint-config-angular",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "eslint for angular project",
     "main": "index.js",
     "repository": {
@@ -20,14 +20,17 @@
         "url": "https://github.com/kidwen/eslint-config-angular/issues"
     },
     "homepage": "https://github.com/kidwen/eslint-config-angular#readme",
+    "scripts": {
+        "lint": "cd ./example/lint && ng lint"
+    },
     "dependencies": {
         "@angular-eslint/builder": "^14.0.3",
         "@angular-eslint/eslint-plugin": "^14.0.3",
         "@angular-eslint/eslint-plugin-template": "^14.0.3",
         "@angular-eslint/schematics": "^14.0.3",
         "@angular-eslint/template-parser": "^14.0.3",
-        "@typescript-eslint/eslint-plugin": "^5.34.0",
-        "@typescript-eslint/parser": "^5.34.0",
+        "@typescript-eslint/eslint-plugin": "^5.57.0",
+        "@typescript-eslint/parser": "^5.57.0",
         "codelyzer": "^6.0.2",
         "eslint": "^8.22.0",
         "eslint-plugin-import": "^2.26.0",

@@ -19,7 +19,7 @@ module.exports = {
         "jsdoc",
         "unicorn",
         "prefer-arrow",
-
+        "@typescript-eslint"
     ],
     "rules": {
         "@typescript-eslint/array-type": [
@@ -40,7 +40,7 @@ module.exports = {
                 }
             }
         ],
-        "@typescript-eslint/consistent-type-definitions": "error",
+        "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/dot-notation": "off",
         "@typescript-eslint/explicit-member-accessibility": [
             "error",
@@ -62,7 +62,22 @@ module.exports = {
         "@typescript-eslint/no-unnecessary-type-assertion": "off",
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/prefer-for-of": "off",
-        "@typescript-eslint/prefer-readonly": "off",
+        // "@typescript-eslint/prefer-readonly": "error",
+        "@typescript-eslint/adjacent-overload-signatures": "error",
+        "@typescript-eslint/ban-tslint-comment": "error",
+        // "@typescript-eslint/consistent-type-exports": "error",
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/explicit-module-boundary-types": "error",
+        "@typescript-eslint/member-delimiter-style": "error",
+        "@typescript-eslint/member-ordering": [
+            "error",
+            {
+                "default": {
+                    memberTypes: ["signature", "field", "constructor", "method"],
+                },
+                // "order": "alphabetically-case-insensitive",
+            }
+        ],
         "@typescript-eslint/strict-boolean-expressions": [
             "off",
             {
@@ -269,6 +284,7 @@ module.exports = {
                 "@typescript-eslint/no-unnecessary-qualifier": "error",
                 "@typescript-eslint/no-unnecessary-type-arguments": "error",
                 "@typescript-eslint/promise-function-async": "error",
+                "@typescript-eslint/prefer-optional-chain": "error",
             }
         },
         {
@@ -281,9 +297,10 @@ module.exports = {
             ],
             "rules": {
                 "@typescript-eslint/restrict-plus-operands": "error",
-                "@typescript-eslint/unbound-method": "error",
+                // "@typescript-eslint/unbound-method": ["error"],
                 "import/no-deprecated": "error",
                 "no-useless-constructor": "error",
+                "no-unused-vars": "off",
                 "@typescript-eslint/no-unused-vars": "error"
             }
         },
@@ -316,7 +333,7 @@ module.exports = {
                 "@angular-eslint/template/no-positive-tabindex": "off",
                 "@angular-eslint/template/use-track-by-function": "off",
                 "@angular-eslint/template/i18n": "off",
-                "@angular-eslint/template/attributes-order": "error"
+                // "@angular-eslint/template/attributes-order": "error"
                 // "@angular-eslint/template/i18n": [
                 //     "error",
                 //     {
