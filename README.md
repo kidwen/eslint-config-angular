@@ -1,3 +1,5 @@
+![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/kidwen/eslint-config-angular?color=green)
+
 # eslint-angular
 > eslint for angular project
 
