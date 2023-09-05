@@ -38,12 +38,20 @@
     ```
 
 ## Test
-in your project root
 ```sh
+git clone https://github.com/kidwen/eslint-config-angular.git
+
+cd eslint-config-angular
+
+yarn
+
 yarn link
 ```
+
 cd example/lint
 ```sh
+yarn
+
 yarn link @kidwen/eslint-config-angular
 
 yarn lint
