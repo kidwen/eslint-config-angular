@@ -36,3 +36,15 @@
         "extends": "@kidwen/eslint-config-angular"
     }
     ```
+
+## Test
+in your project root
+```sh
+yarn link
+```
+cd example/lint
+```sh
+yarn link @kidwen/eslint-config-angular
+
+yarn lint
+```

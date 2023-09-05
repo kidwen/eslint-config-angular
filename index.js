@@ -189,7 +189,7 @@ module.exports = {
             "error",
             "never"
         ],
-        "unicorn/filename-case": "error",
+        "unicorn/filename-case": "off",
         "yoda": "error"
     },
     "overrides": [
@@ -278,7 +278,7 @@ module.exports = {
                 "@angular-eslint/contextual-lifecycle": [
                     "error"
                 ],
-                "@angular-eslint/prefer-on-push-component-change-detection": "error",
+                "@angular-eslint/prefer-on-push-component-change-detection": "off",
                 "@typescript-eslint/await-thenable": "error",
                 "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
                 "@typescript-eslint/no-unnecessary-qualifier": "error",
@@ -299,7 +299,7 @@ module.exports = {
                 "@typescript-eslint/restrict-plus-operands": "error",
                 // "@typescript-eslint/unbound-method": ["error"],
                 "import/no-deprecated": "error",
-                "no-useless-constructor": "error",
+                "no-useless-constructor": "off",
                 "no-unused-vars": "off",
                 "@typescript-eslint/no-unused-vars": "error"
             }
