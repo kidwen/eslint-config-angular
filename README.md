@@ -2,6 +2,8 @@
 [![NPM](https://img.shields.io/npm/l/%40kidwen%2Feslint-config-angular)](https://img.shields.io/github/license/kidwen/eslint-config-angular
 )
 ![npm (prod) dependency version (scoped)](https://img.shields.io/npm/dependency-version/%40kidwen%2Feslint-config-angular/%40angular-eslint%2Fschematics)
+![npm (prod) dependency version (scoped)](https://img.shields.io/npm/dependency-version/%40kidwen%2Feslint-config-angular/eslint)
+![npm (prod) dependency version (scoped)](https://img.shields.io/npm/dependency-version/%40kidwen%2Feslint-config-angular/typescript)
 
 # eslint-angular
 > eslint for angular project
