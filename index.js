@@ -73,7 +73,7 @@ module.exports = {
             "error",
             {
                 "default": {
-                    memberTypes: ["signature", "field", "constructor", "method"],
+                    "memberTypes": ["signature", "field", "constructor", "method"],
                 },
                 // "order": "alphabetically-case-insensitive",
             }
@@ -238,9 +238,6 @@ module.exports = {
                         "style": "kebab-case"
                     }
                 ],
-                "@angular-eslint/use-injectable-provided-in": "error",
-                "@angular-eslint/contextual-decorator": "error",
-
                 "@angular-eslint/directive-selector": [
                     "error",
                     {
@@ -273,7 +270,6 @@ module.exports = {
                 "@angular-eslint/no-output-native": "error",
                 "@angular-eslint/prefer-output-readonly": "error",
                 "@angular-eslint/relative-url-prefix": "error",
-                "@angular-eslint/use-component-selector": "error",
                 "@angular-eslint/use-component-view-encapsulation": "error",
                 "@angular-eslint/contextual-lifecycle": [
                     "error"
