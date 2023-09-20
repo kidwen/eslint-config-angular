@@ -230,14 +230,6 @@ module.exports = {
                 ],
                 "@angular-eslint/use-injectable-provided-in": "error",
                 "@angular-eslint/contextual-decorator": "error",
-                "@angular-eslint/component-selector": [
-                    "error",
-                    {
-                        "type": "element",
-                        "prefix": "",
-                        "style": "kebab-case"
-                    }
-                ],
                 "@angular-eslint/directive-selector": [
                     "error",
                     {
