@@ -56,5 +56,4 @@ yarn
 
 yarn link @kidwen/eslint-config-angular
 
-yarn lint
 ```
