@@ -63,7 +63,7 @@ module.exports = {
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/prefer-for-of": "off",
         // "@typescript-eslint/prefer-readonly": "error",
-        "@typescript-eslint/adjacent-overload-signatures": "error",
+        // "@typescript-eslint/adjacent-overload-signatures": "error",
         "@typescript-eslint/ban-tslint-comment": "error",
         // "@typescript-eslint/consistent-type-exports": "error",
         "@typescript-eslint/explicit-function-return-type": "error",
