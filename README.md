@@ -31,12 +31,19 @@
     }
     ```
 
-1. add `.eslintrc.json` file like this
+1. add `eslint.config.json` file like this
     ```
-    {
-        "root": true,
-        "extends": "@kidwen/eslint-config-angular"
-    }
+    const tseslint = require('typescript-eslint');
+    module.exports = tseslint.config(
+        ...kidwenlint,
+        {
+            files: ['**/*.ts'],
+            rules: {
+                // your rules
+            },
+        }
+    );
+
     ```
 
 ## Test
@@ -56,4 +63,5 @@ yarn
 
 yarn link @kidwen/eslint-config-angular
 
+yarn lint
 ```
