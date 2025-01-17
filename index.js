@@ -9,7 +9,6 @@ const angular = require('angular-eslint');
 const stylistic = require('@stylistic/eslint-plugin');
 
 module.exports = tseslint.config(
-    eslint.configs.recommended,
     {
         files: ['**/*.ts'],
         languageOptions: {
