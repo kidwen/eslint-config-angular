@@ -457,6 +457,8 @@ module.exports = tseslint.config(
             '@angular-eslint/no-output-on-prefix': 'error',
             '@angular-eslint/no-pipe-impure': 'error',
             '@angular-eslint/no-queries-metadata-property': 'error',
+            '@angular-eslint/no-uncalled-signals': 'error',
+            '@angular-eslint/prefer-inject': 'error',
             '@angular-eslint/no-lifecycle-call': 'off',
             '@angular-eslint/component-max-inline-declarations': 'off',
 
@@ -476,6 +478,7 @@ module.exports = tseslint.config(
             '@angular-eslint/pipe-prefix': 'off',
             '@angular-eslint/no-output-native': 'error',
             '@angular-eslint/prefer-output-readonly': 'error',
+            "@angular-eslint/prefer-output-emitter-ref": "error",
             '@angular-eslint/relative-url-prefix': 'error',
             '@angular-eslint/use-component-view-encapsulation': 'error',
             '@angular-eslint/contextual-lifecycle': [
@@ -514,6 +517,14 @@ module.exports = tseslint.config(
             '@angular-eslint/template/i18n': 'off',
             '@angular-eslint/template/prefer-control-flow': 'error',
             '@angular-eslint/template/role-has-required-aria': 'error',
+            '@angular-eslint/template/prefer-template-literal': 'error',
+            '@angular-eslint/template/no-interpolation-in-attributes': [
+                'error',
+                {
+                    'allowSubstringInterpolation': true,
+                },
+            ],
+            '@angular-eslint/template/prefer-at-empty': 'error',
         }
     }
 );
