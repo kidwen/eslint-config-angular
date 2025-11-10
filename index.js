@@ -1,14 +1,14 @@
-const eslint = require('@eslint/js');
-const tseslint = require('typescript-eslint');
-const globals = require('globals');
-const importPlugin = require('eslint-plugin-import');
-const jsdocPlugin = require('eslint-plugin-jsdoc');
-const unicornPlugin = require('eslint-plugin-unicorn');
-const preferArrowPlugin = require('eslint-plugin-prefer-arrow');
-const angular = require('angular-eslint');
-const stylistic = require('@stylistic/eslint-plugin');
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import globals from 'globals';
+import importPlugin from 'eslint-plugin-import';
+import jsdocPlugin from 'eslint-plugin-jsdoc';
+import unicornPlugin from 'eslint-plugin-unicorn';
+import preferArrowPlugin from 'eslint-plugin-prefer-arrow';
+import angular from 'angular-eslint';
+import stylistic from '@stylistic/eslint-plugin';
 
-module.exports = tseslint.config(
+export default tseslint.config(
     {
         files: ['**/*.ts'],
         languageOptions: {
@@ -58,7 +58,6 @@ module.exports = tseslint.config(
                     }
                 }
             ],
-            '@typescript-eslint/no-empty-function': 'error',
             '@typescript-eslint/no-for-in-array': 'error',
             '@typescript-eslint/no-inferrable-types': 'off',
             '@typescript-eslint/no-non-null-assertion': 'off',
@@ -163,7 +162,8 @@ module.exports = tseslint.config(
             'no-div-regex': 'off',
             'no-else-return': 'off',
             'no-empty': ['error', { allowEmptyCatch: false }],
-            'no-empty-function': 'error',
+            'no-empty-function': 'off',
+            '@typescript-eslint/no-empty-function': ['error', { allow: [] }],
             'no-empty-static-block': 'error',
             'no-eq-null': 'error',
             'no-eval': ['error', { allowIndirect: false }],
@@ -226,6 +226,7 @@ module.exports = tseslint.config(
             ],
             'no-unneeded-ternary': ['error', { defaultAssignment: true }],
             'no-unused-expressions': ['error', { allowShortCircuit: false, allowTernary: false, allowTaggedTemplates: false, enforceForJSX: false }],
+            '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: false, allowTernary: false, allowTaggedTemplates: false, enforceForJSX: false }],
             'no-unused-labels': 'error',
             'no-useless-call': 'error',
             'no-useless-catch': 'error',
@@ -269,7 +270,7 @@ module.exports = tseslint.config(
                 }
             ],
             '@stylistic/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: false }],
-            '@stylistic/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false, ignoreStringLiterals: false }],
+            '@stylistic/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: 'never', ignoreStringLiterals: false }],
             '@stylistic/semi': ['error', 'always', { omitLastInOneLineBlock: false, omitLastInOneLineClassBody: false }],
             '@stylistic/semi-spacing': ['error', { before: false, after: true }],
             '@stylistic/semi-style': ['error', 'last'],
@@ -293,9 +294,7 @@ module.exports = tseslint.config(
                     nestedBinaryExpressions: false,
                     ternaryOperandBinaryExpressions: true,
                     ignoreJSX: 'none',
-                    enforceForArrowConditionals: true,
                     enforceForSequenceExpressions: true,
-                    enforceForNewInMemberExpressions: false,
                     enforceForFunctionPrototypeMethods: false,
                     nestedConditionalExpressions: false
                 }
@@ -387,7 +386,7 @@ module.exports = tseslint.config(
             '@stylistic/computed-property-spacing': ['error', 'never', { enforceForClassMembers: true }],
             '@stylistic/dot-location': ['error', 'property'],
             '@stylistic/eol-last': ['error', 'always'],
-            '@stylistic/func-call-spacing': ['error', 'never'], // alias of @stylistic/function-call-spacing
+            '@stylistic/function-call-spacing': ['error', 'never'],
             '@stylistic/function-call-argument-newline': ['error', 'consistent'],
             '@stylistic/function-call-spacing': ['error', 'never'],
             '@stylistic/function-paren-newline': ['error', 'consistent'],
