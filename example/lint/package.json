@@ -9,6 +9,7 @@
         "test": "ng test",
         "lint": "ng lint"
     },
+    "type": "module",
     "private": true,
     "dependencies": {
         "@angular/animations": "^18.0.2",
@@ -24,6 +25,7 @@
         "zone.js": "~0.14.2"
     },
     "devDependencies": {
+        "@kidwen/eslint-config-angular": "file:../eslint-config-angular",
         "@angular-devkit/build-angular": "^18.0.3",
         "@angular/cli": "~18.0.3",
         "@angular/compiler-cli": "^18.0.2",
@@ -38,6 +40,6 @@
         "karma-jasmine": "~5.1.0",
         "karma-jasmine-html-reporter": "~2.0.0",
         "typescript": "5.4.5",
-        "typescript-eslint": "^8.20.0"
+        "typescript-eslint": "^8.46.0"
     }
 }

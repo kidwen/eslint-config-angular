@@ -1,15 +1,10 @@
-/* eslint-disable no-undef */
+import tseslint from 'typescript-eslint';
+import angular from 'angular-eslint';
+import kidwenLint from '@kidwen/eslint-config-angular';
+import globals from 'globals';
 
-const tseslint = require('typescript-eslint');
-
-const angular = require('angular-eslint');
-
-const kidwenlint = require('@kidwen/eslint-config-angular');
-
-const globals = require('globals');
-
-module.exports = tseslint.config(
-    ...kidwenlint,
+export default tseslint.config(
+    kidwenLint,
     {
         files: ['**/*.ts'],
         processor: angular.processInlineTemplates,
