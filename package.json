@@ -1,6 +1,6 @@
 {
     "name": "@kidwen/eslint-config-angular",
-    "version": "20.6.0",
+    "version": "20.6.1",
     "description": "eslint for angular project",
     "main": "index.js",
     "type": "module",
