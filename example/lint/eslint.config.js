@@ -4,7 +4,7 @@ import kidwenLint from '@kidwen/eslint-config-angular';
 import globals from 'globals';
 
 export default tseslint.config(
-    kidwenLint,
+    ...kidwenLint,
     {
         files: ['**/*.ts'],
         processor: angular.processInlineTemplates,

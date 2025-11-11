@@ -473,16 +473,17 @@ export default tseslint.config(
                     ]
                 }
             ],
-
             '@angular-eslint/pipe-prefix': 'off',
+            '@angular-eslint/prefer-host-metadata-property': 'error',
             '@angular-eslint/no-output-native': 'error',
             '@angular-eslint/prefer-output-readonly': 'error',
-            "@angular-eslint/prefer-output-emitter-ref": "error",
+            '@angular-eslint/prefer-output-emitter-ref': 'error',
             '@angular-eslint/relative-url-prefix': 'error',
             '@angular-eslint/use-component-view-encapsulation': 'error',
             '@angular-eslint/contextual-lifecycle': [
                 'error'
             ],
+            '@angular-eslint/use-lifecycle-interface': 'error',
             '@angular-eslint/prefer-on-push-component-change-detection': 'off',
             '@typescript-eslint/await-thenable': 'error',
             '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
@@ -523,7 +524,21 @@ export default tseslint.config(
                     'allowSubstringInterpolation': true,
                 },
             ],
+            '@angular-eslint/template/prefer-ngsrc': 'error',
             '@angular-eslint/template/prefer-at-empty': 'error',
+            '@angular-eslint/template/prefer-built-in-pipes': ['error', {
+                'disallowList': [
+                    'toUpperCase',
+                    'toLowerCase',
+                    'getFullYear'
+                ]
+            }],
+            '@angular-eslint/template/conditional-complexity': [
+                'error',
+                {
+                    'maxComplexity': 5,
+                }
+            ],
         }
     }
 );
